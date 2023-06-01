@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Portfolio</title>
+   <link rel="stylesheet" href="des.css">
+</head>
+<body>
+    <div class="main" id="home">
+    <nav>
+        
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#serv">Services</a></li>
+            <li><a href="#exp">Experience</a></li>
+            <li><a href="#con">contact me</a></li>
+        </ul>
+    </nav>
+    <div class="hom">
+     <div class="home" >
+           <h1>Welcome my name is Durotimi</h1>
+           <p>This is my web portfolio to show my services and experiences as a 
+            software developer. I graduated from Redeemers University with a bachelor degree in 
+            Computer Science. i am a quick learner and i am ready to learn new technologies that
+            is inline with the job requirement
+           </p>
+
+     </div>
+     <div class="image">
+        <img src="1.jpg" alt="none">
+     </div>
+    </div>
+    
+    <div class="serv" id="serv">
+        <h1> Services</h1>
+        <div class="services">
+               <div class="frontend">
+                        <h1> <img src="11.png" alt="none"></h1>
+                      <h1>Frontend Development</h1>
+                     <p>I specialise in building front-end web apps for clients using 
+                        React js with external styling templates to help visualize the clients specific
+                        goal for the application.
+                        
+                        As a developer my main goal is to develop fluid apps that the user
+                        finds ease in using with design principles, coding technology and programmng 
+                        to elevate the user experience and interaction in using the web app.
+                     </p>
+               </div>
+               <div class="maint">
+                <h1> <img src="10.png" alt="none"></h1>
+                <h1>Software Maintaenance</h1>
+                <p> As a Software Developer i offer maintenance to existing softwares to check for bugs
+                     softtware maintenance is the process of changing, modifying, and updating software
+                     to keep up with customer needs. 
+                     it is a very important aspect of a software's development lifecycle as it guarantees ease of use
+                     of the software which in return brings satisfaction and ease to the users of the software.  
+                      
+                </p>
+               </div> 
+        </div>
+    </div>
+
+    <div class="exp" id="exp"> 
+              <h1> Experience</h1>
+            <div class="expe">
+                      <div class="sch">
+                        <p>i was part of the team responsible for the development of a major component
+                            in a secondary school web app that is responsible for the processing of the results
+                            by the teachers and the checking of the results by the students via the web app.
+                        </p>
+                      </div>
+                      <div class="pra">
+                        <p>i created a react app that connects to an open source API to display list of movies poster card upon
+                            being searched on. 
+                            i also created an app that connects to a popular game API that can let me print out
+                            the gamer user ingame details upon his username being searched.(i have created multiple personal projects)
+                        </p>
+                      </div>
+                      <div class="bui">
+                        <p>i worked as a freelance developer and helped the clients to create single page buisness
+                            promotion web app, that extends the reach of the clients market to a larger audience on
+                            the internet
+                        </p>
+                      </div>
+            </div>
+    </div>
+
+    <div class="picList">
+           <div class="picGroup"> 
+                    <h1> pictures of me</h1>
+                 <div  id="pics1" class="dImages1"></div>
+           </div>
+    </div>
+
+
+      <div class="con" id="con">
+              <div class="contact">
+                <h1> Oluwadurotimi Agboola</h1>
+                <p> For my services please contact me via</p>
+                <a href="#"><img src="12.png" alt=""></a>
+                <a href="#"><img src="13.png" alt=""></a>
+                <a href="#"><img src="14.png" alt=""></a>
+                <p>Email me @ <a href="">timiagb1@gmail.com</a>      Work Contact: 08134918280       
+                   <a href="#home">GO TO THE TOP</a></p>
+              </div>
+      </div>
+
+
+
+
+
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function(){
+          let displaya=["dImages1","dImages2","dImages3","dImages4","dImages5"];
+          let pics1= document.getElementById("pics1");
+            let i=0;
+          let id=setInterval(function(){
+             
+              pics1.className="";
+              let idx=Math.floor(Math.random()*5);
+              let pic=displaya[idx];
+              pics1.classList.add(pic);
+           
+              
+             
+  
+              
+            },2000);
+          
+      });
+  </script>
+    </div>
+</body>
+</html>
